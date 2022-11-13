@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  height: 83.33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0 ;
+  width: 625px;
+  left: 447px;
+  padding: 0 10px;
+  transition: 0.2s;
+  z-index: 999;
+  &.isShow{
+    background-color: #1C2A37;
+  }
+}
+
+.logo {
+  img {
+    width: 113px;
+    height: 38px;
+  }
+}
+
+.right-header {
+  display: flex;
+
+  .group-icon{
+    display: flex;
+  }
+  .icon {
+    cursor: pointer;
+    display: block;
+    margin-left: 18.33px;
+    img {
+      width: 41.66px;
+      height: 41.66px;
+    }
+  }
+}

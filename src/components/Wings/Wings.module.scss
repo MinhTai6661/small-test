@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  .content {
+    color: #ffdba7 !important;
+    margin: 0 20px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &.isShow {
+    display: block;
+  }
+}
