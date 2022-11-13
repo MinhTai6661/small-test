@@ -1,0 +1,18 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.list-icon{
+    display: flex;
+  }
+  .item{
+    width: 175px;
+    height: 175px;
+    background-color: #1D2837;
+    img{
+      width: 100%;
+    }
+  }
+  

@@ -8,6 +8,9 @@ import Warning from "../../components/Warning";
 import Wings from "../../components/Wings";
 import 'antd/dist/antd.css';
 import Turtorial from "../../components/Turtorial";
+import Ecosystem from "../../components/Ecosystem";
+import Faq from "../../components/Faq";
+import Partner from "../../components/Partner";
 
 
 const notification = [
@@ -37,8 +40,14 @@ function Home() {
             } />
             <Warning content='cảnh báo có rât nhiều hình thức lừa đảo' />
             <Game />
-           
+
             <Turtorial />
+
+            <Ecosystem />
+
+            <Faq />
+
+            <Partner />
 
         </>
     );

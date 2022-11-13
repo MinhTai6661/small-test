@@ -4,10 +4,8 @@
   .content {
     color: #ffdba7 !important;
     margin: 0 20px;
-    font-size: 30px;
+    font-size: 30px !important;
     font-weight: 700;
   }
-  &.isShow {
-    display: block;
-  }
+   
 }
