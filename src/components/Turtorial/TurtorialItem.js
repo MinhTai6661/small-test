@@ -14,8 +14,7 @@ function TurtorialItem({ logo, logoName, link }) {
     return (
         <div className={cx('item')}>
             <span className={cx('logo')}>
-                <img src={logo} />
-                 
+                <img src={logo} />  
             </span>
             <a className={cx('link')} href={link}>{link}</a>
             <buton className={cx('btn')}>hướng dẫn</buton>

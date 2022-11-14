@@ -1,22 +1,37 @@
 .wrapper {
-
+  .heading {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
 
   p {
     color: var(--text-primary);
     font-size: 20px;
+   
   }
-  img {
+  .img {
     width: 100%;
   }
 }
 
-.content{
-    background: linear-gradient(#2e3b4d, #1c2532);
-    padding: 20px;
-    border-radius: 20px;
-    line-height: 25px;
-    img{
-        border-radius: inherit;
-        margin: 10px 0;
+.content {
+  background: linear-gradient(#2e3b4d, #1c2532);
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 25px;
+  img {
+    border-radius: inherit;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .content{
+    p{
+      font-size: var(--font-size-text-normal-mobile-2);
+
     }
+  }
+
 }

@@ -4,15 +4,20 @@
   margin: 20px 0;
 }
 
-.list-icon{
-    display: flex;
+// .list-icon {
+//   display: flex;
+// }
+// .item {
+//   width: 175px;
+//   height: 175px;
+//   background-color: #1d2837;
+//   img {
+//     width: 100%;
+//   }
+// }
+
+.logos {
+  img {
+    width: 100%;
   }
-  .item{
-    width: 175px;
-    height: 175px;
-    background-color: #1D2837;
-    img{
-      width: 100%;
-    }
-  }
-  
+}

@@ -27,6 +27,12 @@ $backgound: #2e3a47;
   width: 150px;
   height: 42px;
   position: relative;
+  
+  .list {
+    position: absolute;
+    display: none;
+  }
+
   &.isOpen .list {
     display: block;
   }
@@ -35,7 +41,11 @@ $backgound: #2e3a47;
   z-index: 3;
 }
 
-.list {
-  position: absolute;
-  display: none;
+
+
+.title{
+text-overflow: ellipsis; 
+overflow: hidden; 
+white-space: nowrap;
+margin-right: auto;
 }

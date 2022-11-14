@@ -33,21 +33,23 @@ function TabItem(props) {
     };
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('qr-address')}>
-                <div className={cx('link')}>
-                    <h3>
-                        Địa chỉ cược
-                    </h3>
-                    <span> - Ví tiền phi tập trung</span>
-                    <p className='code'>TXW7UNgbRdntaJKCMR4swGEdL9GCidWwWr</p>
+           <div style={{display:'flex', justifyContent:"center"}}>
+                <div className={cx('qr-address')}>
+                    <div className={cx('link')}>
+                        <h3>
+                            Địa chỉ cược
+                        </h3>
+                        <span> - Ví tiền phi tập trung</span>
+                        <p className={cx('code')}>TXW7UNgbRdntaJKCMR4swGEdL9GCidWwWr</p>
+                    </div>
+                    <div className={cx('qr')}>
+                        <QrcodeOutlined />
+                    </div>
+                    <div className={cx('save')}>
+                        <SaveOutlined />
+                    </div>
                 </div>
-                <div className={cx('qr')}>
-                    <QrcodeOutlined />
-                </div>
-                <div className={cx('save')}>
-                    <SaveOutlined />
-                </div>
-            </div>
+           </div>
 
             <div className={cx('hash')}>
                 <img src='https://obhash.gaotuprofessional.com/_nuxt/img/game-2.e2a9c67.jpg' />
@@ -133,12 +135,6 @@ function TabItem(props) {
                     </div>
 
                 </Slider>
-
-
-
-
-
-
 
             </div>
         </div>

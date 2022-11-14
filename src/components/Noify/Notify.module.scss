@@ -17,8 +17,8 @@
     font-size: 25px;
     color: rgba(255, 255, 255, 0.8);
   }
-}
-.group-notify{
+
+  .group-notify{
     overflow-y: auto;
     margin-bottom: 50px;
     max-height: 500px;
@@ -51,6 +51,10 @@
     background-color: #FFEACB;
     font-weight: 300;
     cursor: pointer;
+    color: var(--text-black);
 
   }
+}
+
+
 }

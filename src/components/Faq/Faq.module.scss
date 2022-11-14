@@ -4,18 +4,18 @@
   margin: 20px 0;
 }
 
-.content{
-    background: linear-gradient(#2e3b4d, #1c2532);
-    padding: 20px;
-    border-radius: 20px;
-    line-height: 25px;
+.content {
+  background: linear-gradient(#2e3b4d, #1c2532);
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 25px;
 }
 .question-item {
   h3 {
     font-size: 20px;
     color: var(--text-primary);
 
-    margin: 10px 0 ;
+    margin: 10px 0;
   }
   p {
     color: var(--text-2);
@@ -24,3 +24,14 @@
   }
 }
 
+@media (max-width: 576px) {
+  .question-item {
+    h3 {
+      color: var(--text-primary);
+      margin: 10px 0;
+    }
+    p {
+      font-size: var(--font-size-text-normal-mobile-2);
+    }
+  }
+}

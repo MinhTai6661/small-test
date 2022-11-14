@@ -14,11 +14,11 @@ const tutorials = [
         items: [
             {
                 logo: 'https://obhash.gaotuprofessional.com/_nuxt/img/platform_trustwallet.b3f73ef.png',
-                link: 'https://trustwallet.com/',
+                link: ' trustwallet.com/',
             },
             {
                 logo: 'https://obhash.gaotuprofessional.com/_nuxt/img/platform_tronlink.0b60510.png',
-                link: 'https://trustwallet.com/',
+                link: 'trustwallet.com/',
             },
         ]
     },
@@ -27,15 +27,15 @@ const tutorials = [
         items: [
             {
                 logo: 'https://obhash.gaotuprofessional.com/_nuxt/img/platform_yibifu.bd66b96.png',
-                link: 'https://trustwallet.com/',
+                link: 'trustwallet.com/',
             },
             {
                 logo: 'https://obhash.gaotuprofessional.com/_nuxt/img/platform_gate.8338574.png',
-                link: 'https://trustwallet.com/',
+                link: 'trustwallet.com/',
             },
             {
                 logo: 'https://obhash.gaotuprofessional.com/_nuxt/img/platform_yibifu.bd66b96.png',
-                link: 'https://trustwallet.com/',
+                link: 'trustwallet.com/',
             },
         ]
     },

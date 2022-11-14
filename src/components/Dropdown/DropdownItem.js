@@ -9,13 +9,13 @@ const cx = classNames.bind(styles)
 
 
 
-function DropdownItem({ title, arrow , flag}) {
+function DropdownItem({ title, arrow , flag, onClick}) {
     return (
-        <button className={cx('item')}>
+        <button className={cx('item')} onClick={onClick}>
             <span className={cx('flag')}>
                 <img src={flag}/>
             </span>
-            {title}
+            <span className={cx('title')}>{title}</span>
            { arrow && <span className={cx('arrow')}>  <CaretUpOutlined /></span>}
         </button>
     )
