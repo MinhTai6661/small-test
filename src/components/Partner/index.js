@@ -10,7 +10,6 @@ const cx = classNames.bind(styles)
 export default function Partner() {
 
     const translate = useTranslate()
-    console.log("🚀 ~ file: index.js ~ line 13 ~ Partner ~ translate", translate('partner'))
     return (
         <div className={cx('wrapper')}>
             <div className={cx('heading')}>

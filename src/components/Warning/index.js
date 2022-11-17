@@ -59,7 +59,7 @@ function Warning({ content }) {
             <div className={cx('group-notify')}>
                 {
                     notifies.map((content, index) => (
-                        <div className={cx('item')}>
+                        <div className={cx('item')} key={index}>
                             <span className={cx('title')}>
                                 <Wings>
                                     Sự thông báo {index + 1}

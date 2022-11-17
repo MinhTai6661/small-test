@@ -31,21 +31,19 @@ const listLanguages = [
   },
 ]
 
-
 export default function Dropdown() {
 
   const translate = useTranslate()
   const currentLanguage = useSelector(state=>state.Intl.locale)
   
   const [isOpen, setIsOpen] = useState(false);
-  const [currentNational, setCurentNational] = useState({...listLanguages[listLanguages.findIndex((item)=>item.locale === currentLanguage)]})
+  const [currentNational, setCurentNational] = useState({...listLanguages[listLanguages.findIndex((item)=>item.locale === currentLanguage)]}||0)
 
   const handleClickDropdown = () => {
     setIsOpen(prev => !prev)
   }
 
   const handleChangeLanguage = (language) => {
-   
     setCurentNational(language)
     store.dispatch(IntlActions.setLocale(language.locale))
   }
@@ -60,7 +58,7 @@ export default function Dropdown() {
       <ul className={cx('list')}>
         {
           listLanguages.map(item=>(
-            item.locale !==currentNational.locale &&  <DropdownItem title={item.title} flag={item.flag} onClick={()=>handleChangeLanguage(item)} />
+            item.locale !==currentNational.locale &&  <DropdownItem key={item.title} title={item.title} flag={item.flag} onClick={()=>handleChangeLanguage(item)} />
           ))
         }
       </ul>

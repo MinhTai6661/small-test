@@ -71,15 +71,15 @@ function Turtorial(props) {
                 </Wings>
             </div>
             <div className={cx('content')}>
-                <Timeline mode={mode}>
+                <Timeline mode={mode} >
 
                     {
-                        tutorials.map((line) => (
-                            <Timeline.Item  >
+                        tutorials.map((line,index) => (
+                            <Timeline.Item  key={index} >
                                 <h2 className={cx('time-line')}>{line.heading}</h2>
                                 {
-                                    line?.items && line?.items.map(item => (
-                                        <TurtorialItem logo={item?.logo} link={item?.link} />
+                                    line?.items && line?.items.map((item,index) => (
+                                        <TurtorialItem key={index} logo={item?.logo} link={item?.link} />
                                     ))
                                 }
 

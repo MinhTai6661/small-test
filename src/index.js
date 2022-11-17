@@ -17,7 +17,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter >
     <Provider store={store}>
-       <IntlProvider  translations={translations} locale='vi'>+
+       <IntlProvider  translations={translations}  locale='vi'>
           <GolbalStyle>
             <App />
           </GolbalStyle>

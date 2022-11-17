@@ -15,7 +15,7 @@ export default function Faq() {
 
     return (
         <div className={cx('wrapper')}>
-            <div class={cx('header')}>
+            <div className={cx('header')}>
                 <Wings>Faq</Wings>
             </div>
             <div className={cx('content')}>

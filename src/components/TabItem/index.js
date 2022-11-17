@@ -28,7 +28,10 @@ const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 3
+    // slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 5000,
 };
 function TabItem(props) {
   const translate = useTranslate()

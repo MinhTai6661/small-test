@@ -10,7 +10,7 @@ export default function ActivitiesList() {
     <div className='activities-page__list'>
         {
           images.activities.map((item) => (
-            <img src={item} />
+            <img src={item} key={item} />
           ))
         }
     </div>

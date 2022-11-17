@@ -1,5 +1,4 @@
 const translations = {
-
   vi: {
     locale: 'vi',
 
