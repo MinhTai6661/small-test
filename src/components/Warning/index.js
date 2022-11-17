@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import styles from './Warning.module.scss'
 import { ExclamationCircleFilled } from '@ant-design/icons'
 import Notify from '../Noify'
 import Wings from '../Wings'
+import { useTranslate } from 'react-redux-multilingual'
 
 const cx = classNames.bind(styles)
 
@@ -17,7 +18,12 @@ const notifies = [
 
 
 function Warning({ content }) {
+
+  const translate = useTranslate()
+
+  const warnings = translate('warning')
   const [showNotify, setShowNotify] = useState(false)
+  const [currentwarning, setCurrentWarning] = useState(0)
   const handleShow = () => {
     setShowNotify(true)
   }
@@ -26,13 +32,27 @@ function Warning({ content }) {
 
   }
 
+  useEffect(() => {
+   const intervalId = setInterval(()=>{
+     
+     setCurrentWarning(prev => prev===0 ?1 : 0 )
+   },2000)
+  
+    return () => {
+       clearInterval(intervalId)
+    }
+  }, [])
+  
+
 
   return (
     <div className={cx('wrapper')}>
+
+      
       <span className={cx('icon')}><ExclamationCircleFilled /></span>
 
       <p className={cx('content')}>
-        {content}
+      {warnings[currentwarning]}
       </p>
      
       <div className={cx('popup',{showNotify})}>

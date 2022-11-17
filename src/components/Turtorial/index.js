@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState, useTransition } from 'react'
 import PropTypes from 'prop-types'
 import Wings from '../Wings'
 import styles from './Turtorial.module.scss'
 import classNames from 'classnames/bind'
 import { Timeline } from 'antd'
 import TurtorialItem from './TurtorialItem'
+import { useTranslate } from 'react-redux-multilingual'
+
 
 const cx = classNames.bind(styles)
 
@@ -14,7 +16,7 @@ const tutorials = [
         items: [
             {
                 logo: 'https://obhash.gaotuprofessional.com/_nuxt/img/platform_trustwallet.b3f73ef.png',
-                link: ' trustwallet.com/',
+                link: 'trustwallet.com/',
             },
             {
                 logo: 'https://obhash.gaotuprofessional.com/_nuxt/img/platform_tronlink.0b60510.png',
@@ -48,18 +50,24 @@ const tutorials = [
 ]
 
 function Turtorial(props) {
+    const translate = useTranslate()
+    
     const [mode, setMode] = useState('left');
     const onChange = (e) => {
         setMode(e.target.value);
     };
 
+    tutorials[0].heading = translate('tutorials.signIn')
+    tutorials[1].heading = translate('tutorials.buy')
+    tutorials[2].heading = translate('tutorials.win')
+    
 
     return (
         <div className={cx('wrapper')}>
 
             <div className={cx('heading')}>
                 <Wings  >
-                    Quy trinh tham gia
+                  { translate('tutorials.title')}
                 </Wings>
             </div>
             <div className={cx('content')}>
@@ -68,11 +76,9 @@ function Turtorial(props) {
                     {
                         tutorials.map((line) => (
                             <Timeline.Item  >
-
                                 <h2 className={cx('time-line')}>{line.heading}</h2>
                                 {
                                     line?.items && line?.items.map(item => (
-
                                         <TurtorialItem logo={item?.logo} link={item?.link} />
                                     ))
                                 }
@@ -82,11 +88,11 @@ function Turtorial(props) {
                         ))
                     }
                 </Timeline>
-                    <div className={cx('bingo')}>
-                        <h3>Sau khi trúng thưởng hệ thống sẽ tự động trả tiền</h3>
-                        
-                        <img src='https://obhash.gaotuprofessional.com/_nuxt/img/progress-4-title.968de16.png'/>
-                    </div>
+                <div className={cx('bingo')}>
+                    <h3>{translate('tutorials.return')}</h3>
+
+                    <img src='https://obhash.gaotuprofessional.com/_nuxt/img/progress-4-title.968de16.png' />
+                </div>
 
             </div>
         </div>

@@ -1,0 +1,17 @@
+.home__custom-cart {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  opacity: 0.8;
+  transform: translateX(229%);
+  img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__custom-cart {
+    transform: translateX(150%);
+  }
+}

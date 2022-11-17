@@ -3,7 +3,7 @@
     width: 100%;
     margin: auto;
     background-color: var(--background-color);
-    padding: 0 20px;
-    //  height: 2000px;
+    padding: 0 var(--container-padding);
+ 
     position:relative;
 }

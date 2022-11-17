@@ -10,7 +10,6 @@
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  
 }
 .link {
   background-color: #262b34;
@@ -52,10 +51,12 @@
 }
 .qr {
   background-color: #20252c;
+  cursor: pointer;
 }
 .save {
   background-color: #ffe0b3;
   border-top-right-radius: 10px;
+  color: var(--text-black);
 }
 
 .hash {
@@ -103,33 +104,128 @@
   }
 }
 
-@media (max-width: 576px) {
-  .qr-address {
-     
+
+//hien thi popup
+.qr-detail {
+  text-align: center;
+  position: fixed !important;
+  max-width: calc(var(--container-width) - var( --container-padding) * 2) ;
+
+   
+  width: 92%;
+  max-height: 90vh;
+  overflow: auto;
+  top: 10px;
+  background: var(--background-box);
+  z-index: 9999;
+  border-radius: 20px;
+  position: relative;
+  padding: 20px;
+  
+  visibility: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  &::-webkit-scrollbar {
+    display: none;
   }
+  &.isShowDetail{
+    opacity: 1;
+    visibility: visible;
+    }
+  .btn-close {
+    text-align: right;
+    font-size: 30px;
+    color: var(--primary-color-ligh);
+    display: block;
+    margin-left: auto;
+  }
+  img {
+    width: 211px;
+    margin: 30px 0;
+  }
+  .copy {
+    display: flex;
+    width: 100%;
+    border-radius: var(--border-box);
+    overflow: hidden;
+    margin: 30px 0;
+    .qr-text {
+      text-align: left;
+      background-color: #262b34;
+      flex: 1;
+      padding: 10px 0 10px 20px;
+      h3,p{
+        max-width: 400px;
+      }
+      h3 {
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--text-primary);
+      }
+      p {
+        color: var(--text-2);
+        word-wrap: break-word;
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+    .btn-copy {
+      margin-left: auto;
+      width: 80px;
+      // height: 80px;
+      color: var(--text-black);
+      background-color: var(--primary-color-ligh);
+      font-size: 30px;
+      transition: 0.2s;
+        &:hover{
+          filter: brightness(1.05);
+        }
+    }
+  }
+
+  .btn-save {
+    background-color: var(--primary-color-ligh);
+    font-size: 22px;
+    color: var(--text-black);
+    margin: 30px 0;
+    padding: 20px 100px;
+    border-radius: 50px;
+    transition: 0.2s;
+
+    &:hover{
+      filter: brightness(1.05);
+    }
+  }
+}
+
+@media (max-width: 576px) {
   .link {
     max-width: 310px;
     h3 {
       font-size: 18px;
     }
-    span ,p {
+    span,
+    p {
       font-size: var(--font-size-text-normal-mobile);
     }
-    
   }
   .role {
     font-size: 14px;
   }
 
   .example {
-    strong {
-    }
     .item {
       font-size: 15px;
-
       .title {
         font-size: 18px;
       }
     }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .qr-detail {
+    // max-width: 576px;
   }
 }

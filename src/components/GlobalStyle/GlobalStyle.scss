@@ -1,8 +1,8 @@
 :root {
   --primary-color: #a3947a;
+  --primary-color-ligh: #FFDBA7;
   --background-color: #101d2a;
   --background-box: linear-gradient(#2e3b4d, #1c2532);
-  --border-box: 20px;
 
   --red-color: #ff5400;
   --text-primary: rgba(255, 255, 255, 0.8);
@@ -10,8 +10,11 @@
   --text-black: rgb(60, 60, 60);
 
   --container-width: 625px;
+  --container-padding: 20px;
   --font-size-text-normal-mobile:13px;
   --font-size-text-normal-mobile-2:15px;
+  --border-box: 20px;
+  --header-height:83.33px;
 }
 
 html {
@@ -157,6 +160,8 @@ table {
 
 button {
   border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .slick-arrow,

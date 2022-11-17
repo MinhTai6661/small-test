@@ -5,6 +5,9 @@ import styles from './Dropdown.module.scss'
 import React, { useState } from 'react'
 import DropdownItem from './DropdownItem'
 import images from '../../assets'
+import { IntlActions, useTranslate } from 'react-redux-multilingual'
+import store from '../../redux/store'
+import { useSelector } from 'react-redux'
 
 const cx = classNames.bind(styles)
 
@@ -12,17 +15,17 @@ const cx = classNames.bind(styles)
 
 const listLanguages = [
   {
-    id: 1,
+    locale: 'vi',
     title: 'Việt Nam',
     flag: images.flag.vietnam
   },
   {
-    id: 2,
+    locale:'china',
     title: 'China',
     flag: images.flag.china
   },
   {
-    id: 3,
+    locale:'en',
     title: 'USA',
     flag: images.flag.usa
   },
@@ -30,30 +33,34 @@ const listLanguages = [
 
 
 export default function Dropdown() {
-  console.log(listLanguages)
 
+  const translate = useTranslate()
+  const currentLanguage = useSelector(state=>state.Intl.locale)
+  
   const [isOpen, setIsOpen] = useState(false);
-  const [currentNational, setCurentNational] = useState({...listLanguages[0]})
-
+  const [currentNational, setCurentNational] = useState({...listLanguages[listLanguages.findIndex((item)=>item.locale === currentLanguage)]})
 
   const handleClickDropdown = () => {
     setIsOpen(prev => !prev)
   }
 
-  const handleChangeLanguage = (id)=>{
-    setCurentNational(id)
+  const handleChangeLanguage = (language) => {
+   
+    setCurentNational(language)
+    store.dispatch(IntlActions.setLocale(language.locale))
   }
-
 
   return (
     <div className={cx('wrapper', { isOpen })} onClick={handleClickDropdown}>
+  
+      
       <div className={cx('box')}>
         <DropdownItem title={ currentNational.title} flag={currentNational.flag} arrow />
       </div>
       <ul className={cx('list')}>
         {
           listLanguages.map(item=>(
-            item.id !==currentNational.id &&  <DropdownItem title={item.title} flag={item.flag} onClick={()=>handleChangeLanguage(item)} />
+            item.locale !==currentNational.locale &&  <DropdownItem title={item.title} flag={item.flag} onClick={()=>handleChangeLanguage(item)} />
           ))
         }
       </ul>

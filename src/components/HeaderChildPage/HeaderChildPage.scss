@@ -1,0 +1,36 @@
+.header__child {
+  background-color: #1c2a37;
+  height: 83.33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: calc(100% + 40px);
+  transform: translateX(-20px);
+  padding: 0 10px;
+  transition: 0.5s;
+  z-index: 999;
+  font-size: 25px;
+  color: var(--primary-color);
+  &-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #293038;
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+    color: var(--primary-color);
+    transition: 0.2s;
+    &:hover {
+      color: var(--primary-color);
+      filter: brightness(1.2);
+    }
+  }
+}

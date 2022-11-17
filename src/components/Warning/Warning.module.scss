@@ -32,22 +32,24 @@
 .popup {
     text-align: center;
     position: fixed !important;
-    width: 583px;
+    max-width: calc(var(--container-width) - var( --container-padding) * 2) ;
+    width: 92%;
+    left: 50%;
     height: 80vh;
     top: 10px;
     background-color: #394355;
     z-index: 9999;
     border-radius: 20px;
     position: relative;
-    transform: translateX(-12px);
+    //animation
     visibility: hidden;
-    transform: scale(0.5);
+    transform: scale(0.5) translateX(-50%);
     opacity: 0;
     transition: 0.5s;
     &.showNotify{
         visibility: visible;
         opacity: 1;
-        transform: scale(1);
+        transform: scale(1) translateX(-50%);
     }
   
     p {

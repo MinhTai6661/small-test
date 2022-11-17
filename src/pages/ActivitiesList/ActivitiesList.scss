@@ -1,0 +1,10 @@
+.activities-page {
+  &__list {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: var(--border-box);
+    }
+  }
+}

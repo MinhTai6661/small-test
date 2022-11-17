@@ -3,14 +3,18 @@ import styles from './Partner.module.scss'
 import classNames from 'classnames/bind'
 import Wings from '../Wings'
 import images from '../../assets'
+import { useTranslate } from 'react-redux-multilingual'
 
 const cx = classNames.bind(styles)
 
 export default function Partner() {
+
+    const translate = useTranslate()
+    console.log("🚀 ~ file: index.js ~ line 13 ~ Partner ~ translate", translate('partner'))
     return (
         <div className={cx('wrapper')}>
             <div className={cx('heading')}>
-                <Wings >Đối tác</Wings>
+                <Wings >{translate('partner.title')}</Wings>
             </div>
         <div className={cx('logos')}>
             <img src={images.partner}/>

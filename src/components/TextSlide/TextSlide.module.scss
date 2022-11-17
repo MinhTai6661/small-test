@@ -1,18 +1,16 @@
 .wrapper {
   padding-top: 300px;
-  background-image: url('https://assure-cy.s3.ap-northeast-2.amazonaws.com/act_prod/786277500229156911.jpg')  ;
+  background-image: url("https://assure-cy.s3.ap-northeast-2.amazonaws.com/act_prod/786277500229156911.jpg");
   background-size: contain;
   margin: -100px -20px 0 -20px;
-  background-repeat: no-repeat ;
-
+  background-repeat: no-repeat;
 }
 
 .item {
   background-color: #3b4b6a;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 30px;
   margin: 10px 5px;
-  display: inline-block;
   width: auto;
   font-size: 18px;
   font-weight: 500;
@@ -20,58 +18,47 @@
   display: inline-flex;
   align-items: center;
 
+  &.lv1,
+  &.lv2 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 100%;
+    display: block;
+  }
+  .content {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  strong {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 5px;
+  }
+
   &.lv1 {
     background-color: #1f7a49;
     .icon {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translate(-50% ,-50%) ;
       color: var(--primary-color);
       background-color: #165333;
-      font-size: 40px;
-      padding: 5px;
       border: 1px solid var(--primary-color);
-      border-radius: 100%;
-      display: block;
-    }
-
-    .content{
-        padding-left: 20px;
-         
-    }
-    strong {
-        color: var(--primary-color);
-        font-size: 30px;
-        font-weight: 700;
-        margin: 0 5px;
     }
   }
   &.lv2 {
     background-color: #193d60;
     .icon {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translate(-50% ,-50%) ;
-        color: var(--primary-color);
-        background-color: #193d60;
-        font-size: 40px;
-        padding: 5px;
-        border: 1px solid var(--primary-color);
-        border-radius: 100%;
-        display: block;
-      }
-  
-      .content{
-          padding-left: 20px;
-           
-      }
-      strong {
-          color: var(--primary-color);
-          font-size: 30px;
-          font-weight: 700;
-          margin: 0 5px;
-      }
+      color: var(--primary-color);
+      background-color: #193d60;
+      border: 1px solid var(--primary-color);
+    }
   }
 }

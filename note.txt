@@ -1,0 +1,17 @@
+Việc còn lại
+
+nút:
+chăm sóc kh ->ok
+
+Popup
+địa chỉ cược --ok
+ 
+
+Tinh nang: da ngon ngu
+
+
+Trang:
+Đăng nhập, đăng ký, chăm sóc khách hàng, (xu ly react hook form de sau )
+
+
+

@@ -1,13 +1,17 @@
 
 import Slider from "react-slick";
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import styles from './TabItem.module.scss'
 import images from '../../assets'
-import { QrcodeOutlined, SaveOutlined } from '@ant-design/icons'
+import { CloseCircleOutlined, QrcodeOutlined, SaveOutlined } from '@ant-design/icons'
 import { Carousel } from 'antd'
 import "slick-carousel/slick/slick.css";
+import Container from '../Container'
+import { useTranslate } from 'react-redux-multilingual'
+
+
 
 const cx = classNames.bind(styles)
 const contentStyle = {
@@ -27,29 +31,57 @@ const settings = {
     slidesToScroll: 3
 };
 function TabItem(props) {
+  const translate = useTranslate()
 
+    const [isShowDetail, setShowDetail] = useState(false)
     const onChange = (currentSlide) => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
     };
+    const handeShowDetail = () => {
+        setShowDetail(true)
+    }
+    const handeCloseDetail = () => {
+        setShowDetail(false)
+    }
     return (
         <div className={cx('wrapper')}>
-           <div style={{display:'flex', justifyContent:"center"}}>
+            <div style={{ display: 'flex', justifyContent: "center" }}>
                 <div className={cx('qr-address')}>
                     <div className={cx('link')}>
                         <h3>
-                            Địa chỉ cược
+                        {translate('games.address')}
                         </h3>
-                        <span> - Ví tiền phi tập trung</span>
+                        <span> - {translate('games.use')}</span>
                         <p className={cx('code')}>TXW7UNgbRdntaJKCMR4swGEdL9GCidWwWr</p>
                     </div>
-                    <div className={cx('qr')}>
+                    <div className={cx('qr')} onClick={handeShowDetail}>
                         <QrcodeOutlined />
                     </div>
                     <div className={cx('save')}>
                         <SaveOutlined />
                     </div>
+
+
+                    <div className={cx('qr-detail', { isShowDetail })}>
+
+                        <button className={cx('btn-close')} onClick={handeCloseDetail}>
+                            <CloseCircleOutlined />
+                        </button>
+                        <img src={images.qr} />
+                        <div className={cx('copy')}>
+                            <div className={cx('qr-text')}>
+                                <h3 >Địa chỉ cược </h3>
+                                <p>TLneRBe5xNr79JuuVKd9j4nEKsxt9Pkjsc</p>
+                            </div>
+                            <button className={cx('btn-copy')}><SaveOutlined /></button>
+                        </div>
+                        <button className={cx('btn-save')}>Lưu vào album</button>
+
+                    </div>
+
+
                 </div>
-           </div>
+            </div>
 
             <div className={cx('hash')}>
                 <img src='https://obhash.gaotuprofessional.com/_nuxt/img/game-2.e2a9c67.jpg' />
@@ -57,17 +89,18 @@ function TabItem(props) {
 
             <div className={cx('role')}>
                 <div>
-                    <span> tỷ lệ cược </span>
+                    <span> {translate('games.ratio')} </span>
                     <strong> 1x95</strong>
                 </div>
                 <div>
-                    <span> hạn mức CK</span>
-                    <strong> 10-10000 USDT 100-100000 TRX</strong>
+                <span> {translate('games.limit')} </span>
 
+                    <strong> 10-10000 USDT 100-100000 TRX</strong>
                 </div>
                 <div>
                     <span>
-                        Phần số nguyên của số tiền chuyển khoản sẽ tham dự rút thưởng, phần lẻ thập phân sẽ bị khấu trừ
+                    <span> {translate('games.int')} </span>
+
                     </span>
                 </div>
 
@@ -81,59 +114,55 @@ function TabItem(props) {
 
             <div className={cx('example')}>
 
-
-
-
                 <Slider {...settings}>
+                
+               
                     <div>
                         <div className={cx('item')}>
+
+                       
                             <h3 className={cx('title')}>
-                                vd1
+                                {translate('games.example.title',{num:1})}
                             </h3>
-                            <div>Nhận biết cược tai < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu< strong>1000</strong></div>
-                            <div>Kết quả  < strong> tiền hệ thống CK là：1000*1.95=1950</strong></div>
+                                {translate('games.example.know')}
+                            <div>< strong>1000</strong></div>
+                            <div>{translate('games.example.lastDigit')}< strong>1000</strong></div>
+                            <div>{translate('games.example.result')} < strong> {translate('games.example.money')}*1.95=1950</strong></div>
 
                         </div>
                     </div>
+               
                     <div>
                         <div className={cx('item')}>
+
+                       
                             <h3 className={cx('title')}>
-                                vd1
+                                {translate('games.example.title',{num:2})}
                             </h3>
-                            <div>Nhận biết cược tai < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu< strong>1000</strong></div>
-                            <div>Kết quả  < strong> tiền hệ thống CK là：1000*1.95=1950</strong></div>
+                                {translate('games.example.know')}
+                            <div>< strong>1000</strong></div>
+                            <div>{translate('games.example.lastDigit')}< strong>1000</strong></div>
+                            <div>{translate('games.example.result')} < strong> {translate('games.example.money')}*1.95=1950</strong></div>
 
                         </div>
                     </div>
+               
                     <div>
                         <div className={cx('item')}>
+
+                       
                             <h3 className={cx('title')}>
-                                vd1
+                                {translate('games.example.title',{num:3})}
                             </h3>
-                            <div>Nhận biết cược tai < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu< strong>1000</strong></div>
-                            <div>Kết quả  < strong> tiền hệ thống CK là：1000*1.95=1950</strong></div>
+                                {translate('games.example.know')}
+                            <div>< strong>1000</strong></div>
+                            <div>{translate('games.example.lastDigit')}< strong>1000</strong></div>
+                            <div>{translate('games.example.result')} < strong> {translate('games.example.money')}*1.95=1950</strong></div>
 
                         </div>
                     </div>
-                    <div>
-                        <div className={cx('item')}>
-                            <h3 className={cx('title')}>
-                                vd1
-                            </h3>
-                            <div>Nhận biết cược tai < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu < strong>1000</strong></div>
-                            <div>Chữ số cuối cùng của Block hash là "1" nhận biết là Xỉu< strong>1000</strong></div>
-                            <div>Kết quả  < strong> tiền hệ thống CK là：1000*1.95=1950</strong></div>
-
-                        </div>
-                    </div>
-
+               
+                     
                 </Slider>
 
             </div>

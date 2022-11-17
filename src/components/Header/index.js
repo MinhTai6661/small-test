@@ -4,28 +4,29 @@ import styles from './Header.module.scss'
 import classNames from 'classnames/bind'
 import images from '../../assets'
 import Dropdown from '../Dropdown'
+import { Link } from 'react-router-dom'
 
 
 const cx = classNames.bind(styles)
 
 function Header(props) {
 
-const [isShow,setShow] = useState(false)
+  const [isShow, setShow] = useState(false)
 
-   
+
   useEffect(() => {
     const handleEvent = () => {
-        setShow(window.scrollY > 50 ? true : false);
+      setShow(window.scrollY > 50 ? true : false);
     };
     window.addEventListener('scroll', handleEvent);
 
     return () => {
-        window.removeEventListener('scroll', handleEvent);
+      window.removeEventListener('scroll', handleEvent);
     };
-}, []);
+  }, []);
 
   return (
-    <header className={cx('header',{isShow})} >
+    <header className={cx('header', { isShow })} >
       <span className={cx('logo')}>
         <img src={images.logo} />
       </span>
@@ -34,9 +35,9 @@ const [isShow,setShow] = useState(false)
           < Dropdown />
         </div>
         <div className={cx('group-icon')}>
-          <span className={cx('icon')}>
+          <Link to='/activities-list' className={cx('icon')}>
             <img src={images.icons.activity} />
-          </span>
+          </Link>
           <span className={cx('icon')}>
             <img src={images.icons.user} />
           </span>
