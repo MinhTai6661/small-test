@@ -7,7 +7,7 @@ Popup
 địa chỉ cược --ok
  
 
-Tinh nang: da ngon ngu
+Tinh nang: da ngon ngu ->ok(trang home)
 
 
 Trang:

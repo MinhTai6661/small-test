@@ -1,7 +1,7 @@
 .wrapper {
   color: #fff;
   width: 100%;
-  height: 100px;
+  height: 10rem;
   height: auto;
 }
 
@@ -9,35 +9,35 @@
   display: flex;
   width: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 .link {
   background-color: #262b34;
   flex: 1;
-  padding: 10px;
-  border-bottom-left-radius: 10px;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
   // max-width: 410px;
   // width: 100%;
 
   h3 {
     color: var(--text-primary);
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 20;
     font-weight: 700;
     display: inline-block;
   }
   span {
     color: var(--text-2);
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 300;
   }
   p {
     color: var(--text-2);
-    font-size: 20px;
+    font-size: 2.0rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 310px;
+    max-width: 31rem; //chu y
   }
 }
 .qr,
@@ -45,9 +45,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  min-width: 70px;
-  border-bottom-right-radius: 10px;
+  font-size: 4rem;
+  min-width: 7rem;
+  border-bottom-right-radius: 1rem;
 }
 .qr {
   background-color: #20252c;
@@ -55,22 +55,22 @@
 }
 .save {
   background-color: #ffe0b3;
-  border-top-right-radius: 10px;
+  border-top-right-radius: 1rem;
   color: var(--text-black);
 }
 
 .hash {
   img {
-    height: 257px;
-    border-radius: 20px;
-    margin-top: 20px;
+    height: 25.7rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
     width: 100%;
   }
 }
 
 .role {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   strong {
     color: var(--red-color);
   }
@@ -81,22 +81,22 @@
   }
 }
 .example {
-  margin-top: 20px;
+  margin-top: 2rem;
   color: #fff !important;
 
   strong {
     color: var(--red-color);
   }
   .item {
-    font-size: 20px;
+    font-size: 2rem;
     color: rgb(136, 136, 136) !important;
     background-color: #121923;
     border-radius: 10px;
-    padding: 20px;
-    margin: 0 10px;
+    padding: 2rem;
+    margin: 0 1rem;
 
     .title {
-      font-size: 25px;
+      font-size: 2.5rem;
       text-align: center;
       color: var(--primary-color);
       text-transform: uppercase;
@@ -115,12 +115,12 @@
   width: 92%;
   max-height: 90vh;
   overflow: auto;
-  top: 10px;
+  top: 1rem;
   background: var(--background-box);
   z-index: 9999;
-  border-radius: 20px;
+  border-radius: 2rem;
   position: relative;
-  padding: 20px;
+  padding: 2rem;
   
   visibility: hidden;
   transition: 0.5s;
@@ -134,48 +134,48 @@
     }
   .btn-close {
     text-align: right;
-    font-size: 30px;
+    font-size: 3rem;
     color: var(--primary-color-ligh);
     display: block;
     margin-left: auto;
   }
   img {
-    width: 211px;
-    margin: 30px 0;
+    width: 21.1rem;
+    margin: 3rem 0;
   }
   .copy {
     display: flex;
     width: 100%;
     border-radius: var(--border-box);
     overflow: hidden;
-    margin: 30px 0;
+    margin: 3rem 0;
     .qr-text {
       text-align: left;
       background-color: #262b34;
       flex: 1;
-      padding: 10px 0 10px 20px;
+      padding: 1rem 0 1rem 2rem;
       h3,p{
-        max-width: 400px;
+        max-width: 40rem;
       }
       h3 {
-        font-size: 25px;
+        font-size: 2.5rem;
         font-weight: 400;
         color: var(--text-primary);
       }
       p {
         color: var(--text-2);
         word-wrap: break-word;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 300;
       }
     }
     .btn-copy {
       margin-left: auto;
-      width: 80px;
+      width: 8rem;
       // height: 80px;
       color: var(--text-black);
       background-color: var(--primary-color-ligh);
-      font-size: 30px;
+      font-size: 3rem;
       transition: 0.2s;
         &:hover{
           filter: brightness(1.05);
@@ -185,11 +185,11 @@
 
   .btn-save {
     background-color: var(--primary-color-ligh);
-    font-size: 22px;
+    font-size: 2.2rem;
     color: var(--text-black);
-    margin: 30px 0;
-    padding: 20px 100px;
-    border-radius: 50px;
+    margin: 3rem 0;
+    padding: 2rem 10rem;
+    border-radius: 5rem;
     transition: 0.2s;
 
     &:hover{
@@ -200,9 +200,9 @@
 
 @media (max-width: 576px) {
   .link {
-    max-width: 310px;
+    max-width: 31rem;
     h3 {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
     span,
     p {
@@ -210,14 +210,14 @@
     }
   }
   .role {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .example {
     .item {
-      font-size: 15px;
+      font-size: 1.5rem;
       .title {
-        font-size: 18px;
+        font-size: 1.8rem;
       }
     }
   }

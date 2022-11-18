@@ -13,6 +13,8 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { IntlActions } from 'react-redux-multilingual'
 import store from './redux/store';
+import CustommerCare from './pages/CustomerCare';
+import Login from './pages/Login';
 
 // let store = createStore(reducers)
 // store.dispatch(IntlActions.setLocale('zh'))
@@ -31,14 +33,14 @@ function App() {
   return (
     <div className="App"  >
       <Container>
-       
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/guide' element={<GuidePage />} />
           <Route path='/activities-list' element={<ActivitiesList />} />
-          <Route element={<h1>NOT FOUND</h1>} />
+          <Route path='/custommer-care' element={<CustommerCare />} />
+          <Route path='/login' element={<Login />} />
+          {/* <Route element={<h1>NOT FOUND</h1>} /> */}
         </Routes>
-      
       </Container>
     </div>
   );

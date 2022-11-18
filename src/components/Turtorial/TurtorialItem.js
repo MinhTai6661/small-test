@@ -18,8 +18,8 @@ function TurtorialItem({ logo, logoName, link }) {
                 <img src={logo} />
             </span>
             <a className={cx('link')} href={`http://${link}`} target='blank'>{link}</a>
-            <Link to='guide' className={cx('btn')}>
-            {translate('tutorials.btn')}
+            <Link to='/guide' className={cx('btn')}>
+                 {translate('tutorials.btn')}
             </Link>
         </div>
     )

@@ -2,12 +2,12 @@
   .heading {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 2rem 0;
   }
 
   p {
     color: var(--text-primary);
-    font-size: 20px;
+    font-size: 2rem;
    
   }
   .img {
@@ -17,12 +17,12 @@
 
 .content {
   background: linear-gradient(#2e3b4d, #1c2532);
-  padding: 20px;
+  padding: 2rem;
   border-radius: 20px;
-  line-height: 25px;
+  line-height: 2rem;
   img {
     border-radius: inherit;
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 }
 

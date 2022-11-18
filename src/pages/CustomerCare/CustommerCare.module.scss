@@ -1,0 +1,54 @@
+ 
+ .wrapper{
+    
+ }
+.banner {
+    margin: 0 -2rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.advise {
+    padding-bottom: 2rem;
+    // background-color: #101D2A;
+}
+
+.item {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-color: #212732;
+    padding: 1.8rem 2rem;
+    border-radius: var(--border-box);
+    margin-bottom: 2rem;
+    // background-color: var(--background-color);
+    word-spacing: 0.5rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
+   
+    img {
+            width: 8.5rem;
+            height: 8.5rem;
+    }
+    .title {
+        margin-right: auto;
+        margin-left: 2rem;
+        font-size: 2.5rem;
+        color:currentColor;
+        font-weight: 500;
+ 
+    }
+
+    .btn {
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        span{
+            margin-left: 1rem;
+            font-size: 2.5rem;
+        }
+    }
+}

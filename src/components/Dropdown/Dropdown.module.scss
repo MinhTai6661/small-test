@@ -1,31 +1,10 @@
 $backgound: #2e3a47;
 
-.item {
-  display: flex;
-  align-items: center;
-  color: var(--text-primary);
-  font-size: 18px;
-  font-weight: 500;
-  width: 150px;
-  height: 42px;
-  background-color: $backgound;
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  .flag {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-  }
-  .arrow {
-    margin-left: 5px;
-  }
-}
+
 
 .wrapper {
-  width: 150px;
-  height: 42px;
+  width: 15rem;
+  height: 4.2rem;
   position: relative;
   
   .list {
@@ -48,4 +27,33 @@ text-overflow: ellipsis;
 overflow: hidden; 
 white-space: nowrap;
 margin-right: auto;
+}
+
+
+
+.item {
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  font-weight: 500;
+   width: 15rem;
+  height: 4.2rem;
+  background-color: $backgound;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  .flag {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    img{
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  .arrow {
+    margin-left: 0.5rem;
+  }
 }

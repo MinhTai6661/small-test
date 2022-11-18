@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
   --primary-color: #a3947a;
   --primary-color-ligh: #FFDBA7;
@@ -10,15 +11,22 @@
   --text-black: rgb(60, 60, 60);
 
   --container-width: 625px;
-  --container-padding: 20px;
-  --font-size-text-normal-mobile:13px;
-  --font-size-text-normal-mobile-2:15px;
+  --container-padding: 2rem;
+  --font-size-text-normal-mobile:1.3rem;
+  --font-size-text-normal-mobile-2:1.5rem;
   --border-box: 20px;
-  --header-height:83.33px;
+  --header-height:8.333rem;
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: 'Poppins', sans-serif  !important;
+  font-size: 62.5% !important;
+}
+@media (max-width: 576px){
+  html{
+    font-size: 42.5% !important;
+
+  }
 }
 
 body {
@@ -117,8 +125,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -172,12 +179,41 @@ button {
   color: var(--primary-color);
 }
 .ant-tabs-tab {
-  font-size: 30px !important;
+  font-size: 3rem !important;
 }
 .ant-tabs-nav-wrap {
   justify-content: center !important;
 }
 
 div.ant-tabs-tab-btn{
-  font-size: 20px !important;
+  font-size: 2rem !important;
 }
+
+
+
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-size: 2.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+ 

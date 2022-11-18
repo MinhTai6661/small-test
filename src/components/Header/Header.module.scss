@@ -6,9 +6,9 @@
   align-items: center;
   position: sticky;
   top:0 ;
-  width: calc(100% + 40px);
-  transform: translateX(-20px);
-  padding: 0 10px;
+  width: calc(100% + 4rem);
+  transform: translateX(-2rem);
+  padding: 0 1rem;
   transition: 0.5s;
   z-index: 999;
 
@@ -19,8 +19,8 @@
 
 .logo {
   img {
-    width: 113px;
-    height: 38px;
+    width: 11.3rem;
+    height: 3.8rem;
   }
 }
 
@@ -33,10 +33,10 @@
   .icon {
     cursor: pointer;
     display: block;
-    margin-left: 18.33px;
+    margin-left: 1.833rem;
     img {
-      width: 41.66px;
-      height: 41.66px;
+      width: 4.166rem;
+      height: 4.166rem;
     }
   }
 }

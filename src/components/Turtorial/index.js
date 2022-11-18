@@ -90,7 +90,6 @@ function Turtorial(props) {
                 </Timeline>
                 <div className={cx('bingo')}>
                     <h3>{translate('tutorials.return')}</h3>
-
                     <img src='https://obhash.gaotuprofessional.com/_nuxt/img/progress-4-title.968de16.png' />
                 </div>
 

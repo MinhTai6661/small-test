@@ -49,7 +49,7 @@ function Home() {
 
       <Partner />
 
-      <Link to="/" className="home__custom-cart">
+      <Link to="/custommer-care" className="home__custom-cart">
         <img src={images.icons.customCare} />
       </Link>
 

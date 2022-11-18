@@ -38,9 +38,9 @@ function Header(props) {
           <Link to='/activities-list' className={cx('icon')}>
             <img src={images.icons.activity} />
           </Link>
-          <span className={cx('icon')}>
+          <Link to='/login' className={cx('icon')} >
             <img src={images.icons.user} />
-          </span>
+          </Link>
         </div>
       </div>
     </header>

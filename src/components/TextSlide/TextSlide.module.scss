@@ -1,18 +1,18 @@
 .wrapper {
-  padding-top: 300px;
+  padding-top: 30rem;
   background-image: url("https://assure-cy.s3.ap-northeast-2.amazonaws.com/act_prod/786277500229156911.jpg");
   background-size: contain;
-  margin: -100px -20px 0 -20px;
+  margin: -10rem -2rem 0 -2rem;
   background-repeat: no-repeat;
 }
 
 .item {
   background-color: #3b4b6a;
-  padding: 5px 10px;
-  border-radius: 30px;
-  margin: 10px 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  margin: 1rem 0.5rem;
   width: auto;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   position: relative;
   display: inline-flex;
@@ -28,21 +28,21 @@
     left: 0;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
-    padding: 5px;
+    font-size: 2.5rem;
+    padding: 0.5rem;
     border-radius: 100%;
     display: block;
   }
   .content {
-    padding-left: 20px;
+    padding-left: 2rem;
     display: flex;
     align-items: center;
   }
   strong {
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin: 0 5px;
+    margin: 0 0.5rem;
   }
 
   &.lv1 {

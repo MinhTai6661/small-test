@@ -14,15 +14,7 @@ import { useTranslate } from 'react-redux-multilingual'
 
 
 const cx = classNames.bind(styles)
-const contentStyle = {
-    margin: 0,
-    height: '160px',
-
-    lineHeight: '160px',
-    textAlign: 'center',
-
-};
-
+ 
 const settings = {
     dots: true,
     infinite: true,
@@ -128,7 +120,7 @@ function TabItem(props) {
                                 {translate('games.example.title',{num:1})}
                             </h3>
                                 {translate('games.example.know')}
-                            <div>< strong>1000</strong></div>
+                           < strong> 1000</strong> 
                             <div>{translate('games.example.lastDigit')}< strong>1000</strong></div>
                             <div>{translate('games.example.result')} < strong> {translate('games.example.money')}*1.95=1950</strong></div>
 
@@ -143,7 +135,7 @@ function TabItem(props) {
                                 {translate('games.example.title',{num:2})}
                             </h3>
                                 {translate('games.example.know')}
-                            <div>< strong>1000</strong></div>
+                             < strong> 1000</strong> 
                             <div>{translate('games.example.lastDigit')}< strong>1000</strong></div>
                             <div>{translate('games.example.result')} < strong> {translate('games.example.money')}*1.95=1950</strong></div>
 
@@ -157,8 +149,8 @@ function TabItem(props) {
                             <h3 className={cx('title')}>
                                 {translate('games.example.title',{num:3})}
                             </h3>
-                                {translate('games.example.know')}
-                            <div>< strong>1000</strong></div>
+                                {translate('games.example.know')} 
+                              <strong> 1000</strong> 
                             <div>{translate('games.example.lastDigit')}< strong>1000</strong></div>
                             <div>{translate('games.example.result')} < strong> {translate('games.example.money')}*1.95=1950</strong></div>
 
