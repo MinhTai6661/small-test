@@ -21,10 +21,11 @@
 html {
   font-family: 'Poppins', sans-serif  !important;
   font-size: 62.5% !important;
+ 
 }
 @media (max-width: 576px){
   html{
-    font-size: 42.5% !important;
+    font-size: 40% !important;
 
   }
 }
@@ -37,6 +38,7 @@ body {
 
 * {
   box-sizing: border-box;
+   
 }
 
 //reset css
@@ -143,7 +145,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  
 }
 ol,
 ul {

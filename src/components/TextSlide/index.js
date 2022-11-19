@@ -25,7 +25,7 @@ export default function TextSlide({ listText }) {
 
                                 <span className={cx('content')}>
                                     {/* {item.name}   <strong > {item.money}  </strong>TRX */}
-                                    {translate('notification.winLevel1',{name:item.name, price:item.money})}
+                                    {translate('notification.winLevel1',{name:item.name })}<strong>{item.money}</strong>TRX
                                 </span>
 
 
@@ -39,11 +39,8 @@ export default function TextSlide({ listText }) {
                                     <span className={cx('icon')}><LikeFilled /></span>
 
                                     <span className={cx('content')}>
-                                {translate('notification.winLevel2',{name:item.name, price:item.money})}
-
+                                {translate('notification.winLevel2',{name:item.name })}<strong>{item.money}</strong>TRX
                                     </span>
-
-
                                 </span>
 
                             </marquee> :

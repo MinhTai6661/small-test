@@ -9,6 +9,16 @@ Popup
 
 Tinh nang: da ngon ngu ->ok(trang home)
 
+overlay: them lop overlay cho popup ->ok
+
+sua lai o check box ->ok
+
+
+dua mau sac ra thanh theme
+
+tim hieu cach config theme cua ant design
+
+sua lai logic phan text slide
 
 Trang:
 Đăng nhập, đăng ký, chăm sóc khách hàng, (xu ly react hook form de sau )

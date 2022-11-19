@@ -5,14 +5,24 @@ const translations = {
     messages: {
       hello: 'xin chào {name}',
       notification: {
-        winLevel1: 'chúc mừng {name} đã trúng lớn nha, số tiền thưởng là {price} TRX',
-        winLevel2: 'chúc mừng {name} đã thắng {price} TRX',
+        winLevel1: 'chúc mừng {name} đã trúng lớn nha, số tiền thưởng là  ',
+        winLevel2: 'chúc mừng {name} đã thắng  ',
         winLevel3: 'chúc mừng {name} đã tham gia',
       },
-      warning: [
-        'cảnh báo có rât nhiều hình thức lừa đảo ',
-        'hãy đảm bảo bạn đang an toàn ',
-      ],
+      warning: {
+        warningList: [
+          'cảnh báo có rât nhiều hình thức lừa đảo ',
+          'hãy đảm bảo bạn đang an toàn ',
+        ],
+        check: 'Kiểm tra',
+        notificationTitle: 'Sự thông báo {i}',
+        notifications: [
+          ' Để đảm bảo trải nghiệm chơi trò chơi của người dùng và tính công bằng của OB Hash. Chúng tôi từ chối các đội đặt cược chuyên nghiệp, từ chối đặt cược máy, v.v. hành vi bất thường. Sẽ trừ 1k phí giao dịch, hoàn tiền & bị cảnh cáo. nếu hành vi đặt cược như trên xảy ra. Sẽ bị xử lý dựa trên mức độ nghiêm trọng của hoàn cảnh, nếu khẳng định là bất hợp pháp.',
+          ' Để đảm bảo trải nghiệm chơi trò chơi của người dùng và tính công bằng của OB Hash. Chúng tôi từ chối các đội đặt cược chuyên nghiệp, từ chối đặt cược máy, v.v. hành vi bất thường. Sẽ trừ 1k phí giao dịch, hoàn tiền & bị cảnh cáo. nếu hành vi đặt cược như trên xảy ra. Sẽ bị xử lý dựa trên mức độ nghiêm trọng của hoàn cảnh, nếu khẳng định là bất hợp pháp.',
+          ' Để đảm bảo trải nghiệm chơi trò chơi của người dùng và tính công bằng của OB Hash. Chúng tôi từ chối các đội đặt cược chuyên nghiệp, từ chối đặt cược máy, v.v. hành vi bất thường. Sẽ trừ 1k phí giao dịch, hoàn tiền & bị cảnh cáo. nếu hành vi đặt cược như trên xảy ra. Sẽ bị xử lý dựa trên mức độ nghiêm trọng của hoàn cảnh, nếu khẳng định là bất hợp pháp.',
+        ],
+        confirm:'Xác nhận'
+      },
       games: {
         luckyNumber: 'LuckyNumber',
         luckyBP: 'Lucky B-P',
@@ -21,6 +31,7 @@ const translations = {
         address: 'địa chỉ cược ',
         use: 'ví tiền tập trung ',
         ratio: 'tỷ lệ cược  ',
+        saveToAlbum:'Lưu vào album',
         limit: 'Hạn mức CK',
         int: 'Phần số nguyên của số tiền chuyển khoản sẽ tham dự rút thưởng, phần lẻ thập phân sẽ bị khấu trừ',
         example: {
@@ -74,22 +85,33 @@ const translations = {
     messages: {
       hello: 'hello {name}',
       notification: {
-        winLevel1: 'congrats {name} for winning the big prize, the prize amount is {price} TRX',
-        winLevel2: 'congrats {name} for winning {price} TRX',
+        winLevel1: 'congrats {name} for winning the big prize, the prize amount is  ',
+        winLevel2: 'congrats {name} for winning  ',
         winLevel3: 'congrats {name} for joining',
       },
-      warning: [
-        'warning there are many forms of fraud',
-        'make sure you are safe',
-      ],
+      warning: {
+        warningList: [
+          'warning there are many forms of fraud',
+          'make sure you\'re safe',
+        ],
+        check: 'Check',
+        notificationTitle: 'Notification {i}',
+        notifications: [
+          ' To ensure the user\'s gaming experience and the fairness of OB Hash. We reject professional bet teams, refuse machine bets, etc. unusual behavior. Will deduct 1k transaction fee, refund & be warned. if the above betting behavior occurs. Will be dealt with based on the severity of the circumstances, if the claim is illegal.',
+          ' To ensure the user\'s gaming experience and the fairness of OB Hash. We reject professional bet teams, refuse machine bets, etc. unusual behavior. Will deduct 1k transaction fee, refund & be warned. if the above betting behavior occurs. Will be dealt with based on the severity of the circumstances, if the claim is illegal.',
+          ' To ensure the user\'s gaming experience and the fairness of OB Hash. We reject professional bet teams, refuse machine bets, etc. unusual behavior. Will deduct 1k transaction fee, refund & be warned. if the above betting behavior occurs. Will be dealt with based on the severity of the circumstances, if the claim is illegal.',
+        ],
+        confirm:'Confirm'
+      },
       games: {
         luckyNumber: 'LuckyNumber',
         luckyBP: 'Lucky B-P',
         hashBull: 'Hash Bull',
         luckyHash: 'Lucky Hash',
-        address: 'bet address',
+        address: 'Bet address',
         use: 'centralized wallet',
         ratio: ' the odds',
+        saveToAlbum:'Save to album',
         limit: 'CK limit',
         int: 'The integer part of the transfer amount will participate in the draw, the decimal part will be deducted',
         example: {
@@ -145,14 +167,24 @@ const translations = {
       hello: 'ni hao {name}',
       notification: {
 
-        winLevel1: '恭喜 {name} 赢得大奖，奖金为 {price} TRX',
-        winLevel2: '恭喜 {name} 赢得 {price} TRX',
+        winLevel1: '恭喜 {name} 赢得大奖，奖金为  ',
+        winLevel2: '恭喜 {name} 赢得  ',
         winLevel3: '恭喜 {name} 加入',
       },
-      warning: [
-        '警告有多种形式的欺诈',
-        '确保你是安全的',
-      ],
+      warning: {
+        warningList: [
+          '警告有多种形式的诈骗',
+          '确保你安全 ',
+        ],
+        check: '测试',
+        notificationTitle: '通知 {i}',
+        notifications: [
+          ' 以保证用户的游戏体验和OB Hash的公平性。我们拒绝专业投注团队，拒绝机器投注等。不寻常的行为。将扣除1k交易费，退款并被警告。如果出现上述投注行为。如属违法，将视情节轻重处理。',
+          ' 以保证用户的游戏体验和OB Hash的公平性。我们拒绝专业投注团队，拒绝机器投注等。不寻常的行为。将扣除1k交易费，退款并被警告。如果出现上述投注行为。如属违法，将视情节轻重处理。',
+          ' 以保证用户的游戏体验和OB Hash的公平性。我们拒绝专业投注团队，拒绝机器投注等。不寻常的行为。将扣除1k交易费，退款并被警告。如果出现上述投注行为。如属违法，将视情节轻重处理。',
+        ],
+        confirm:'确认'
+      },
       games: {
         luckyNumber: '幸运数字',
         luckyBP: '幸运BP',
@@ -161,6 +193,7 @@ const translations = {
         address: '投注地址',
         use: '集中钱包',
         ratio: '赔率 ',
+        saveToAlbum:'保存到相册',
         limit: 'CK限制',
         int: '转账金额整数部分参与抽奖，小数部分扣除',
         example: {

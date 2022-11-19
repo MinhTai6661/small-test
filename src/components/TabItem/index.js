@@ -11,8 +11,6 @@ import "slick-carousel/slick/slick.css";
 import Container from '../Container'
 import { useTranslate } from 'react-redux-multilingual'
 
-
-
 const cx = classNames.bind(styles)
  
 const settings = {
@@ -20,7 +18,6 @@ const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    // slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 5000,
@@ -29,9 +26,6 @@ function TabItem(props) {
   const translate = useTranslate()
 
     const [isShowDetail, setShowDetail] = useState(false)
-    const onChange = (currentSlide) => {
-        // console.log(currentSlide);
-    };
     const handeShowDetail = () => {
         setShowDetail(true)
     }
@@ -55,8 +49,6 @@ function TabItem(props) {
                     <div className={cx('save')}>
                         <SaveOutlined />
                     </div>
-
-
                     <div className={cx('qr-detail', { isShowDetail })}>
 
                         <button className={cx('btn-close')} onClick={handeCloseDetail}>
@@ -65,12 +57,12 @@ function TabItem(props) {
                         <img src={images.qr} />
                         <div className={cx('copy')}>
                             <div className={cx('qr-text')}>
-                                <h3 >Địa chỉ cược </h3>
+                                <h3 >{translate('games.address')}</h3>
                                 <p>TLneRBe5xNr79JuuVKd9j4nEKsxt9Pkjsc</p>
                             </div>
                             <button className={cx('btn-copy')}><SaveOutlined /></button>
                         </div>
-                        <button className={cx('btn-save')}>Lưu vào album</button>
+                        <button className={cx('btn-save')}>{translate('games.saveToAlbum')}</button>
 
                     </div>
 
@@ -82,7 +74,7 @@ function TabItem(props) {
                 <img src='https://obhash.gaotuprofessional.com/_nuxt/img/game-2.e2a9c67.jpg' />
             </div>
 
-            <div className={cx('role')}>
+            <div className={cx('rule')}>
                 <div>
                     <span> {translate('games.ratio')} </span>
                     <strong> 1x95</strong>

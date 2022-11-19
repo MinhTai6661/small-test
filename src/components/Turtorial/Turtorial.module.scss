@@ -1,17 +1,18 @@
-.wrapper {
-}
+.wrapper {}
 
 .content {
-    background: linear-gradient(#2e3b4d , #1C2532);
+  background: linear-gradient(#2e3b4d, #1C2532);
 
   border-radius: 20px;
   padding: 5rem 2rem;
 }
+
 .heading {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
 }
+
 .time-line {
   color: var(--text-primary);
   font-size: 2.5rem;
@@ -31,12 +32,14 @@
       height: 4.1rem;
     }
   }
+
   .link {
     font-size: 2rem;
     color: var(--text-primary);
     border-bottom: 1px solid currentColor;
-    line-height: 2rem;
+    line-height: 2.3rem;
   }
+
   .btn {
     border-radius: 20px;
     border: 1px solid var(--red-color);
@@ -61,60 +64,59 @@
   background: url("https://obhash.gaotuprofessional.com/_nuxt/img/progress-4-bg.00e413f.png");
   border-radius: 20px;
   margin-top: -2rem;
-   
+
   h3 {
     color: var(--text-primary);
   }
-  img{
+
+  img {
     width: 100%
-    
   }
 
-   
+
 }
 
 @media (max-width: 576px) {
-  .time-line{
+  
+  .time-line {
     font-size: 1.8rem;
-    transform: translateY(-3px);
-  
+    transform: translateY(0);
+    margin-left: -10px;
+
   }
+  .item {
+    margin-left: -10px;
+    .logo {
+      img {
+        width: 10rem;
+        height: unset;
+      }
+    }
 
-  
-.item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+    .link {
+      // font-size: 1.4rem;
+      margin: 0 1rem;
+    }
 
-  .logo {
-    img {
-      width: 10rem;
-      height: unset;
+    .btn {
+    //  font-size: 1.4rem;
+      width: 11rem;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      height: 3.5rem;
+      cursor: pointer;
+
     }
   }
-  .link {
-     font-size: 1.6rem;
-     margin: 0  1rem;
-  }
-  .btn {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    height: 3.5rem;
-    cursor: pointer;
-  }
-}
 
-.bingo {
- 
-  font-size: 2.5rem;
-  
-   
-   
- img{
-  margin-top: 1rem;
- }
-  
-}
+  .bingo {
+
+    font-size: 2.5rem;
+
+    img {
+      margin-top: 1rem;
+    }
+
+  }
 
 }

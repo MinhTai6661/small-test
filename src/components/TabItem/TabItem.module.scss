@@ -68,9 +68,10 @@
   }
 }
 
-.role {
+.rule {
   text-align: center;
   font-size: 1.8rem;
+  margin: 1rem 0;
   strong {
     color: var(--red-color);
   }
@@ -198,34 +199,5 @@
   }
 }
 
-@media (max-width: 576px) {
-  .link {
-    max-width: 31rem;
-    h3 {
-      font-size: 1.8rem;
-    }
-    span,
-    p {
-      font-size: var(--font-size-text-normal-mobile);
-    }
-  }
-  .role {
-    font-size: 1.4rem;
-  }
-
-  .example {
-    .item {
-      font-size: 1.5rem;
-      .title {
-        font-size: 1.8rem;
-      }
-    }
-  }
-}
-
-
-@media (max-width: 576px) {
-  .qr-detail {
-    // max-width: 576px;
-  }
-}
+ 
+ 

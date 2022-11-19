@@ -6,11 +6,11 @@
   align-items: center;
   position: sticky;
   top:0 ;
-  width: calc(100% + 4rem);
+  width: calc(100% + var(--container-padding)*2);
   transform: translateX(-2rem);
   padding: 0 1rem;
   transition: 0.5s;
-  z-index: 999;
+  z-index: 99;
 
   &.isShow{
     background-color: #1C2A37;

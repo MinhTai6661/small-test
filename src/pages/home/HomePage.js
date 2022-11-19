@@ -12,6 +12,7 @@ import Partner from "../../components/Partner";
 import images from "../../assets";
 import "./home.scss";
 import { Link } from "react-router-dom";
+import Container from "../../components/Container";
 
 const notification = [
   {
@@ -52,7 +53,7 @@ function Home() {
       <Link to="/custommer-care" className="home__custom-cart">
         <img src={images.icons.customCare} />
       </Link>
-
+    
     
     </>
   );

@@ -15,6 +15,7 @@ import { IntlActions } from 'react-redux-multilingual'
 import store from './redux/store';
 import CustommerCare from './pages/CustomerCare';
 import Login from './pages/Login';
+import RegisterPage from './pages/RegisterPage';
 
 // let store = createStore(reducers)
 // store.dispatch(IntlActions.setLocale('zh'))
@@ -39,6 +40,7 @@ function App() {
           <Route path='/activities-list' element={<ActivitiesList />} />
           <Route path='/custommer-care' element={<CustommerCare />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<RegisterPage />} />
           {/* <Route element={<h1>NOT FOUND</h1>} /> */}
         </Routes>
       </Container>
