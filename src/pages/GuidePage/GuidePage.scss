@@ -2,9 +2,8 @@
 
 
 .guide{
-
   &__header {
-    background-color: #1c2a37;
+    background-color: var(--background-header);
     height: 8.333rem;
     display: flex;
     justify-content: center;
@@ -25,7 +24,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-color: #293038;
+    background-color: var(--background-header-icon);
     width: 4rem;
     height: 4rem;
     border-radius: 100rem;

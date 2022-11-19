@@ -50,7 +50,6 @@ function TabItem(props) {
                         <SaveOutlined />
                     </div>
                     <div className={cx('qr-detail', { isShowDetail })}>
-
                         <button className={cx('btn-close')} onClick={handeCloseDetail}>
                             <CloseCircleOutlined />
                         </button>
@@ -63,7 +62,6 @@ function TabItem(props) {
                             <button className={cx('btn-copy')}><SaveOutlined /></button>
                         </div>
                         <button className={cx('btn-save')}>{translate('games.saveToAlbum')}</button>
-
                     </div>
 
 
@@ -101,13 +99,9 @@ function TabItem(props) {
 
             <div className={cx('example')}>
 
-                <Slider {...settings}>
-                
-               
+                <Slider {...settings}>   
                     <div>
                         <div className={cx('item')}>
-
-                       
                             <h3 className={cx('title')}>
                                 {translate('games.example.title',{num:1})}
                             </h3>
@@ -121,8 +115,6 @@ function TabItem(props) {
                
                     <div>
                         <div className={cx('item')}>
-
-                       
                             <h3 className={cx('title')}>
                                 {translate('games.example.title',{num:2})}
                             </h3>

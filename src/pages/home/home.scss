@@ -3,7 +3,7 @@
   bottom: 10rem;
   right: 50%;
   opacity: 0.8;
-  transform: translateX(330%);
+  transform: translateX(332%);
   // transform: translateX(50%);
   img {
     width: 9rem;
@@ -13,8 +13,8 @@
 
 @media (max-width: 625px) {
   .home__custom-cart {
-    transform: translateX(0);
-   right: var(--container-padding);
+    transform: translateX(4px);
+    right: var(--container-padding);
   }
 }
  

@@ -1,5 +1,5 @@
 .wrapper {
-    background-color: #252A34;
+    background-color: var(--background-input);
     position: relative;
     margin: 2rem 0;
     display: flex;
@@ -19,7 +19,7 @@
            display: block;
         }
         &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: #5D5E61;
+            color: var(--placehoder-color);
             
           }
     }

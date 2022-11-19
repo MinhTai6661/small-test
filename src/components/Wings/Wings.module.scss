@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   .content {
-    color: #ffdba7 !important;
+    color: var(--primary-color-ligh) !important;
     margin: 0 2rem;
     font-size: 3rem !important;
     font-weight: 700;

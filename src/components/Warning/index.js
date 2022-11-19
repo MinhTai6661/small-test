@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import styles from './Warning.module.scss'
-import { ExclamationCircleFilled } from '@ant-design/icons'
+import { ExclamationCircleFilled, WarningOutlined } from '@ant-design/icons'
 import Notify from '../Noify'
 import Wings from '../Wings'
 import { useTranslate } from 'react-redux-multilingual'
@@ -43,7 +43,7 @@ function Warning( ) {
     <div className={cx('wrapper')}>
 
       
-      <span className={cx('icon')}><ExclamationCircleFilled /></span>
+      <span className={cx('icon')}><WarningOutlined /></span>
 
       <p className={cx('content')}>
       {warnings[currentwarning]}

@@ -13,10 +13,9 @@ const cx = classNames.bind(styles)
 export default function Login() {
   return (
     <div className={cx('wrapper')}>
-      <div className={cx('header')} >
+      
         <HeaderChildPage content='Đăng nhập' />
-      </div>
-
+      
       <div className={cx('banner')}>
         <img src={images.logo} />
       </div>

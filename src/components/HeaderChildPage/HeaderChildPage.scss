@@ -1,14 +1,13 @@
 .header__child {
-  background-color: #1c2a37;
+  background-color: var(--background-header);
   height: 8.333rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
-  width: calc(100% + 4rem);
- 
-  transform: translateX(-20px);
+  width: calc(100% + var(--container-padding)*2);
+  transform: translateX(calc(0px - var(--container-padding)));
   padding: 0 1rem;
   transition: 0.5s;
   z-index: 999;
@@ -19,7 +18,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-color: #293038;
+    background-color: var(--background-header-icon);
     width: 4rem;
     height: 4rem;
     border-radius: 100rem;

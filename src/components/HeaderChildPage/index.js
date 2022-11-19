@@ -7,7 +7,7 @@ export default function HeaderChildPage({ content }) {
     return (
         <header className='header__child'>
             {content}
-            <Link to='/' className='header__child-icon'><LeftOutlined /></Link>
+            <Link to='/' className='header__child-icon'> <LeftOutlined /> </Link>
         </header>
     )
 }

@@ -21,20 +21,20 @@
 }
 
 .btn-register {
-    padding: 3rem 5rem;
-    width: 60%;
-    text-align: center;
-    background-image: linear-gradient(183deg, #fff1dc 0, #ffd79d 100%);
-    border-radius: 7rem;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    flex-shrink: 0;
-    font-size: 3rem;
-    color: #20272f;
-    font-weight: 500;
+    padding: 2rem 5rem;
+    min-width: 50%;
+   text-align: center;
+   background-image: linear-gradient(183deg,#fff1dc 0,#ffd79d 100%);
+   border-radius: 7rem;
+   display: flex;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   flex-shrink: 0;
+   font-size: 3rem;
+   color: #20272f;
+   font-weight: 500;
 }
 
 .login-now {

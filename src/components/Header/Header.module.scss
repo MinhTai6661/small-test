@@ -13,7 +13,7 @@
   z-index: 99;
 
   &.isShow{
-    background-color: #1C2A37;
+    background-color: var(--background-header);
   }
 }
 

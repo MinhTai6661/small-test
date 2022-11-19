@@ -16,18 +16,44 @@ import Container from "../../components/Container";
 
 const notification = [
   {
-    level: 1,
-    name: "ngô minh tài   ",
+    name: "ngô minh tài",
     money: 3000,
   },
   {
-    level: 2,
-    name: "Bắp minh ngô  ",
-    money: 500,
+    name: "ngô minh tài 2001",
+    money: 2001,
   },
   {
-    level: 3,
+    name: "ngô minh tài 123",
+    money: 752,
+  },
+  {
+    name: "ngô minh tài 2422275",
+    money: 5000,
+  },
+  {
+    name: "donal trump",
+    money: 100000,
+  },
+  {
+    name: "mark zurkerburt",
+    money: 3,
+  },
+  {
+    name: "Bắp minh ngô",
+    money: 600,
+  },
+  {
     name: "petter",
+  },
+  {
+    name: "lý gia kiệt",
+  },
+  {
+    name: "ronaldo",
+  },
+  {
+    name: "messi",
   },
 ];
 function Home() {

@@ -21,7 +21,7 @@
 }
 
 .icon {
-  color: red;
+  color: var(--warning-color);
   font-size: 2rem;
 }
 
@@ -55,7 +55,7 @@
     transform: translateX(-50%);
     max-width: calc(var(--container-width));
     width: 100%;
-    background-color: rgba(5, 5, 5, 0.589);
+    background-color: var(--background-overlay);
     visibility: hidden;
     opacity: 0;
     z-index: 998;
@@ -69,7 +69,7 @@
     border-radius: 2rem;
     max-width: calc(var(--container-width) - var(--container-padding) * 2);
     width: 100%;
-    background-color: #394355;
+    background: var(--background-box);
     padding: 0rem 2rem;
     //animation
     visibility: hidden;
@@ -93,7 +93,7 @@
   p {
     display: block;
     font-size: 2.5rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-black);
   }
 
   .title {
@@ -108,7 +108,7 @@
   .notify__footer {
     padding: 3rem 0;
     width: 100%;
-    background-color: #394355;
+ 
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     text-align: center;
