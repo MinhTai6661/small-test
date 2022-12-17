@@ -1,6 +1,6 @@
 
 # link website:
-https://github.com/rmdort/react-redux-multilingual#readme
+https://small-test-git-main-minhtai6661.vercel.app/
 
 
 
